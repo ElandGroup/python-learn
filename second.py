@@ -17,3 +17,7 @@ for i in 'hello':
 fruits =['banana','apple','mango']
 for fruit in fruits:
   print(fruit)
+
+
+name = input("please input your name:")
+print("hello,",name)
