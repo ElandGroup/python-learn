@@ -74,7 +74,6 @@ time.sleep(sleepTime)
 browser.switch_to.frame(browser.find_element_by_xpath("//iframe[contains(@src,'staff.aspx?opmode=m&menuid=110306')]"))
 for index in range(0,2):
     time.sleep(sleepTime)
-    print(browser.find_element_by_id("TabContainer1_tabEnquiry_gvStaff").find_element_by_xpath('//*[text()="'+str(int(id)+index)+'"]/../following-sibling::*'))
     browser.find_element_by_id("TabContainer1_tabEnquiry_gvStaff").find_element_by_xpath('//*[text()="'+str(int(id)+index)+'"]/../../td[1]/input').click()
 
 
